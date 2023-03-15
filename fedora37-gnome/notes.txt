@@ -1,0 +1,4 @@
+remove contacts
+remove maps
+remove connections
+remove tour

@@ -1,0 +1,42 @@
+Add these lines to /etc/dnf/dnf.conf
+- 'max_parallel_downloads=5'
+- 'fastestmirror=True'
+- 'defaultyes=True'
+
+Install software from 'installer.sh'
+- chmod a+x installer.sh && sudo ./installer.sh
+
+Nemo Gnome Setup
+- 'cp /usr/share/applications/nemo.desktop ~/.local/share/applications/nemo.desktop'
+- 'nano ~/.local/share/applications/nemo.desktop'
+- Remove the line 'OnlyShowIn=X-Cinnamon'
+
+Install AppImageLauncher
+- https://github.com/TheAssassin/AppImageLauncher
+
+Add Windows Logos to Icons
+- /usr/share/icons/
+
+Dash to Dock
+https://extensions.gnome.org/extension/307/dash-to-dock/
+
+User Themes
+https://extensions.gnome.org/extension/19/user-themes/
+
+Weather O'clock
+https://extensions.gnome.org/extension/5470/weather-oclock/
+
+Alphabetical App Grid
+https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
+
+Impatience
+https://extensions.gnome.org/extension/277/impatience/
+
+Make Chrome Dark
+- 'chrome://flags/#enable-force-dark'
+- 'chrome://settings/appearance' is set to "GTK"
+
+Make neofetch faster
+- 'nano $HOME/.config/neofetch/config.conf'
+- Comment out 'info "Packages" packages'
+- look into fastfetch customizability
