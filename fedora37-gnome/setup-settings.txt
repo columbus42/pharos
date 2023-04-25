@@ -32,7 +32,7 @@ Make neofetch faster
 - look into fastfetch customizability
 
 GTK Themes
-- /usr/local/share/themes
+- /usr/share/themes
 
 Distro Grub Theme
 - https://www.gnome-look.org/p/1482847
