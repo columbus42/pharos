@@ -1,4 +1,5 @@
-Add these lines to /etc/dnf/dnf.conf
+Made DNF work faster
+- Run 'sudo nano /etc/dnf/dnf.conf'
 - 'max_parallel_downloads=5'
 - 'fastestmirror=True'
 - 'defaultyes=True'
@@ -14,25 +15,14 @@ Nemo Gnome Setup
 Install AppImageLauncher
 - https://github.com/TheAssassin/AppImageLauncher
 
-Add Windows Logos to Icons
-- /usr/share/icons/
+Install these extensions
+- Dash to Dock https://extensions.gnome.org/extension/307/dash-to-dock/
+= User Themes https://extensions.gnome.org/extension/19/user-themes/
+- Weather O'clock https://extensions.gnome.org/extension/5470/weather-oclock/
+- Alphabetical App Grid https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
+- Impatience https://extensions.gnome.org/extension/277/impatience/
 
-Dash to Dock
-https://extensions.gnome.org/extension/307/dash-to-dock/
-
-User Themes
-https://extensions.gnome.org/extension/19/user-themes/
-
-Weather O'clock
-https://extensions.gnome.org/extension/5470/weather-oclock/
-
-Alphabetical App Grid
-https://extensions.gnome.org/extension/4269/alphabetical-app-grid/
-
-Impatience
-https://extensions.gnome.org/extension/277/impatience/
-
-Make Chrome Dark
+Make Chrome Dark (I usally don't do this)
 - 'chrome://flags/#enable-force-dark'
 - 'chrome://settings/appearance' is set to "GTK"
 
@@ -40,3 +30,13 @@ Make neofetch faster
 - 'nano $HOME/.config/neofetch/config.conf'
 - Comment out 'info "Packages" packages'
 - look into fastfetch customizability
+
+Distro Grub Theme
+- https://www.gnome-look.org/p/1482847
+- Find and download the 'fedora.tar' file
+- Put the files in /boot/grub2/themes/fedora
+- Run 'sudo nano /etc/default/grub'
+- Comment out 'GRUB_TERMINAL_OUTPUT="console"'
+- Add 'GRUB_THEME=/boot/grub2/themes/fedora/theme.txt'
+- Run 'sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg' on UEFI systems
+- Run 'sudo grub2-mkconfig -o /boot/grub2/grub.cfg' on EFI systems
