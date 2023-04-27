@@ -23,4 +23,4 @@ sudo dnf install -y ffmpeg --allowerasing
 flatpak install -y spotify onlyoffice sublime logseq
 
 # Remove software
-sudo dnf remove -y nautilus thunderbird libreoffice*
+sudo dnf remove -y nautilus thunderbird gnome-contacts gnome-tour gnome-connections gnome-maps libreoffice*
