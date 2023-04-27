@@ -22,5 +22,12 @@ sudo dnf install -y ffmpeg --allowerasing
 
 flatpak install -y spotify onlyoffice sublime logseq
 
+# Install adw-gtk3 Theme
+sudo dnf install -y ninja-build git meson sassc
+git clone https://github.com/lassekongo83/adw-gtk3.git
+cd adw-gtk3
+meson setup build
+sudo ninja -C build install
+
 # Remove software
 sudo dnf remove -y nautilus thunderbird gnome-contacts gnome-tour gnome-connections gnome-maps libreoffice*
