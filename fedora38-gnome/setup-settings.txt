@@ -43,3 +43,11 @@ Distro Grub Theme
 - Add 'GRUB_THEME=/boot/grub2/themes/fedora/theme.txt'
 - Run 'sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg' on UEFI systems
 - Run 'sudo grub2-mkconfig -o /boot/grub2/grub.cfg' on EFI systems
+
+Custom Update
+- nano .update.sh
+- '#!/bin/bash'
+- 'sudo dnf update -y && flatpak update -y'
+- ^X, Y, return
+- nano .bashrc
+- 'alias updateall='sudo ./.update.sh''
