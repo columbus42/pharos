@@ -15,12 +15,12 @@ sudo dnf update -y
 flatpak update -y
 
 # Install Programs
-sudo dnf install -y vlc audacity terminator emacs transmission firefox google-chrome-stable gimp handbrake htop neofetch filezilla gparted fastfetch VirtualBox gnome-tweak-tool nemo papirus-icon-theme gnome-extensions-app file-roller grub-customizer breeze-cursor-theme inkscape
+sudo dnf install -y vlc audacity terminator emacs transmission firefox gimp handbrake htop neofetch filezilla gparted fastfetch VirtualBox gnome-tweak-tool nemo papirus-icon-theme gnome-extensions-app file-roller grub-customizer breeze-cursor-theme inkscape
 
 sudo dnf install -y p7zip-*
 sudo dnf install -y ffmpeg --allowerasing
 
-flatpak install -y spotify onlyoffice sublime logseq
+flatpak install -y spotify onlyoffice sublime logseq bitwarden brave handbrake xnconvert
 
 # Install adw-gtk3 Theme
 sudo dnf install -y ninja-build git meson sassc
